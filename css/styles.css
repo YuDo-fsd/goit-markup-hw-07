@@ -237,16 +237,21 @@ img {
 
 /* OUR BENEFITS */
 
-.benefits-section {
+.benefits {
   padding-bottom: 0;
 }
 
-.benefits-order {
+.benefits__order {
   display: flex;
   gap: 30px;
 }
 
-.benefits-thumb {
+.benefits__list {
+  width: 270px;
+  text-align: left;
+}
+
+.benefits__thumb {
   display: flex;
   width: 270px;
   height: 120px;
@@ -258,12 +263,7 @@ img {
   border-radius: 4px;
 }
 
-.benefits-list {
-  width: 270px;
-  text-align: left;
-}
-
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -273,13 +273,22 @@ img {
   text-transform: uppercase;
 }
 
-.benefits-text {
+.benefits__text {
   color: var(--secondary-text-color);
   font-weight: 400;
   line-height: calc(24 / 14);
 }
 
 /* WHAT WE DO */
+
+.whatwedo__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 .whatwedo__list {
   display: flex;
@@ -312,30 +321,39 @@ img {
 
 /* OUR TEAM */
 
-.section-team {
+.team {
   background-color: var(--section-team-color);
 }
 
-.team-list {
+.team__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.member {
   display: flex;
   gap: 30px;
   padding: 0;
   margin: 0;
 }
 
-.team-member {
+.member__list {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-info {
+.member__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-title {
+.member__title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -344,7 +362,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-position {
+.member__position {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -353,13 +371,13 @@ img {
   margin-bottom: 16px;
 }
 
-.team-social {
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.social-links {
+.social__links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,24 +391,33 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icons {
-  fill: currentColor;
-}
-
-.social-links:hover,
-.social-links:focus {
+.social__links:hover,
+.social__links:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
+.social__icons {
+  fill: currentColor;
+}
+
 /* OUR CLIENTS */
 
-.clients-list {
+.clients__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,12 +433,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:focus,
-.clients-link:hover {
+.clients__link:focus,
+.clients__link:hover {
   color: var(--accent-color);
 }
 
-.icon-clients {
+.clients__icons {
   fill: currentColor;
 }
 
